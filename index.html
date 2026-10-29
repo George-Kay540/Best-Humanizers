@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Best AI Humanizers</title>
+<link rel="icon" type="image/png" href="beta.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #14171f;
+    --muted: #5c6270;
+    --plate: #f1f1f1;
+    --font: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  main {
+    width: 100%;
+    max-width: 420px;
+    padding: 56px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 9vw, 2.6rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  .sub {
+    margin: 12px 0 40px;
+    color: var(--muted);
+    font-size: 1.02rem;
+    line-height: 1.45;
+    font-weight: 500;
+    max-width: 30ch;
+  }
+
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  /* Pressable 3D button, modelled on the reference */
+  .btn {
+    --c: #f0003c;   /* face */
+    --d: #a8002a;   /* underside */
+    display: block;
+    width: 100%;
+    padding: 20px 24px 19px;
+    border-radius: 18px;
+    background: var(--c);
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.28rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    box-shadow:
+      0 7px 0 var(--d),
+      0 14px 18px -4px rgba(0, 0, 0, 0.28);
+    transform: translateY(0);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.15s ease;
+    cursor: pointer;
+  }
+  .btn:hover { filter: brightness(1.07); }
+  .btn:active {
+    transform: translateY(6px);
+    box-shadow:
+      0 1px 0 var(--d),
+      0 3px 6px -2px rgba(0, 0, 0, 0.3);
+  }
+  .btn:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 5px;
+  }
+
+  .red    { --c: #f0003c; --d: #a8002a; }
+  .ink    { --c: #14171f; --d: #000000; }
+  .results {
+    margin-top: 40px;
+    padding: 17px 24px 16px;
+    font-size: 1.08rem;
+    text-align: center;
+  }
+  .blue   { --c: #2f6bff; --d: #1a45b8; }
+  .violet { --c: #8a3ffc; --d: #5a1fb5; }
+
+  .about {
+    margin: 56px 0 0;
+    width: 100%;
+    padding: 26px 22px 22px;
+    border-radius: 20px;
+    background: var(--plate);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.12);
+    text-align: left;
+  }
+  .about h2 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .about p {
+    margin: 0 0 14px;
+    font-size: 0.97rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  .about .note {
+    margin: 18px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Best AI Humanizers</h1>
+    <p class="sub">Tap a tool to check it out.</p>
+
+    <ul class="links">
+      <li><a class="btn red"    href="https://stealthgpt.ai/?via=GK" target="_blank" rel="sponsored noopener noreferrer">StealthGPT</a></li>
+      <li><a class="btn blue"   href="https://writehuman.ai/?via=GK" target="_blank" rel="sponsored noopener noreferrer">WriteHuman</a></li>
+      <li><a class="btn violet" href="https://www.undetectedgpt.ai/?via=GK" target="_blank" rel="sponsored noopener noreferrer">UndetectedGPT</a></li>
+    </ul>
+
+    <section class="about">
+      <h2>Why use a humanizer?</h2>
+      <p>AI writing is here to stay, and so is the suspicion that comes with it. Detectors flag honest work, and the accusations that follow can be loud and unfair. A good humanizer helps your writing read like it came from you, so it gets judged on its merits.</p>
+      <p>I test AI humanizers so you don't have to. These are the three that have held up for me, so pick whichever one suits you.</p>
+      <p class="note"><strong>Disclosure:</strong> these are affiliate links. If you sign up through one, I may earn a commission, at no extra cost to you.</p>
+    </section>
+
+    <a class="btn ink results" href="https://humanizer-index.site" target="_blank" rel="noopener noreferrer">See my humanizer test results</a>
+  </main>
+</body>
+</html>
